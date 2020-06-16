@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html><head>
+    
+
+      
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="NONE,NOARCHIVE">
+      
+
+      <title>Feedback List – Django REST framework</title>
+
+      
+        
+          <link rel="stylesheet" type="text/css" href="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/bootstrap.css">
+          <link rel="stylesheet" type="text/css" href="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/bootstrap-tweaks.css">
+        
+
+        <link rel="stylesheet" type="text/css" href="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/prettify.css">
+        <link rel="stylesheet" type="text/css" href="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/default.css">
+      
+
+    
+  </head>
+
+  
+  <body class="">
+
+    <div class="wrapper">
+      
+        <div class="navbar navbar-static-top navbar-inverse">
+          <div class="container">
+            <span>
+              
+                <a class="navbar-brand" rel="nofollow" href="http://www.django-rest-framework.org/">
+                    Django REST framework
+                </a>
+              
+            </span>
+            <ul class="nav navbar-nav pull-right">
+              
+                
+                  
+                
+              
+            </ul>
+          </div>
+        </div>
+      
+
+      <div class="container">
+        
+          <ul class="breadcrumb">
+            
+              
+                <li class="active"><a href="http://35.194.55.88/feedback/">Feedback List</a></li>
+              
+            
+          </ul>
+        
+
+        <!-- Content -->
+        <div id="content">
+
+          
+            <form id="get-form" class="pull-right">
+              <fieldset>
+                
+                  <div class="btn-group format-selection">
+                    <a class="btn btn-primary js-tooltip" href="http://35.194.55.88/feedback/" rel="nofollow" title="" data-original-title="Make a GET request on the Feedback List resource">GET</a>
+
+                    <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="" data-original-title="Specify a format for the GET request">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a class="js-tooltip format-option" href="http://35.194.55.88/feedback/?format=json" rel="nofollow" title="" data-original-title="Make a GET request on the Feedback List resource with the format set to `json`">json</a>
+                        </li>
+                      
+                        <li>
+                          <a class="js-tooltip format-option" href="http://35.194.55.88/feedback/?format=api" rel="nofollow" title="" data-original-title="Make a GET request on the Feedback List resource with the format set to `api`">api</a>
+                        </li>
+                      
+                    </ul>
+                  </div>
+                
+              </fieldset>
+            </form>
+          
+
+          
+            <form class="button-form" action="/feedback/" data-method="OPTIONS">
+              <button class="btn btn-primary js-tooltip" title="" data-original-title="Make an OPTIONS request on the Feedback List resource">OPTIONS</button>
+            </form>
+          
+
+          
+
+          
+
+            <div class="content-main">
+              <div class="page-header">
+                <h1>Feedback List</h1>
+              </div>
+              <div style="float:left">
+                
+                  <p>List all feedback or create a new feedback</p>
+                
+              </div>
+
+              
+
+              <div class="request-info" style="clear: both">
+                <pre class="prettyprint"><b><span class="pln">GET</span></b><span class="pln"> </span><span class="pun">/</span><span class="pln">feedback</span><span class="pun">/</span></pre>
+              </div>
+
+              <div class="response-info">
+                <pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+  <b>Allow:</b> <span class="lit">OPTIONS, POST, GET</span>
+  <b>Content-Type:</b> <span class="lit">application/json</span>
+  <b>Vary:</b> <span class="lit">Accept</span>
+  
+  </span><span class="pun">[</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Experienced salespeople"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Alex H."</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"date"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2020-02-02"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"feedback"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"It was great to talk to the salespeople in the team, they understood my needs and were able to guide me in the right direction"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"You will find what you want here"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Tom"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"date"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2019-06-05"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"feedback"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"I've being look around for a second handed Lexus RX for my family and this store happened to have a few of those. The experience was similar to most car dealers. The one I ended up buying has good condition and low mileage. I am pretty satisfied with the price they offered."</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Good deal for a 2015 RAV4"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Anonymous"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"date"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2018-04-17"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"feedback"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Called them to look for a second-hand RAV4 and they are very nice and patience to help me find me a few matches then scheduled an appointmet with me. Came in and they had everything ready for me. I was surprised how professional those sales are and they explained and answered all my questions. Ended up buying the car and been using it for more than a month now. Everything looks good!"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Best experience so far"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Katie"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"date"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2019-12-09"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"feedback"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"My friend recommended this place and  I decided to give a try. I called them beforehand and made sure they have the models I was looking for. They evenly sent me a bunch of photos and specs of the car I was looking for. One the day I visited, the sales person John helped me with test drive and showed me what I should be aware of when buying a used car. I felt like I learned a lot. They made the process so smooth that I saved a lot of time. It's the best car purchasing experience I had so far!"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Great Customer Service"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"John"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"date"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2017-12-21"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"feedback"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"The customer service here is very good. They helped me find a 2017 Camry with good condition in reasonable price. Campared to other dealers, they provided the lowest price. Definttely recommend!"</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="str">"id"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"title"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Waste of my time"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Anonymous"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"date"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"2018-09-21"</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">"feedback"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"I came in around 6pm and they seemed about to close the store. One of the sales seemed not being patient with me and made me feel like I have to either buy a car or come back later. Of course I didn't buy a car there. Hopefully they can treat every customer with more patience."</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">]</span></pre>
+              </div>
+            </div>
+
+            
+              
+                <div>
+                  
+
+                  <div class="well tab-content">
+                    
+
+                    <div id="post-generic-content-form">
+                      
+                        <form action="/feedback/" method="POST" class="form-horizontal">
+                          <fieldset>
+                            
+
+
+  <div class="form-group">
+    <label for="id__content_type" class="col-sm-2 control-label">Media type:</label>
+    <div class="col-sm-10">
+      <select data-override="content-type" id="id__content_type" name="_content_type" required="" class="form-control">
+<option value="application/json" selected="selected">application/json</option>
+<option value="application/x-www-form-urlencoded">application/x-www-form-urlencoded</option>
+<option value="multipart/form-data">multipart/form-data</option>
+</select>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="id__content" class="col-sm-2 control-label">Content:</label>
+    <div class="col-sm-10">
+      <textarea cols="40" data-override="content" id="id__content" name="_content" rows="10" required="" class="form-control"></textarea>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+
+                            <div class="form-actions">
+                              <button class="btn btn-primary" title="Make a POST request on the Feedback List resource">POST</button>
+                            </div>
+                          </fieldset>
+                        </form>
+                      
+                    </div>
+                  </div>
+                </div>
+              
+
+              
+            
+        </div><!-- /.content -->
+      </div><!-- /.container -->
+    </div><!-- ./wrapper -->
+
+    
+
+    
+      <script>
+        window.drf = {
+          csrfCookieName: "csrftoken"
+        };
+      </script>
+      <script src="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/jquery-1.js"></script>
+      <script src="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/ajax-form.js"></script>
+      <script src="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/csrf.js"></script>
+      <script src="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/bootstrap.js"></script>
+      <script src="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/prettify-min.js"></script>
+      <script src="Feedback%20List%20%E2%80%93%20Django%20REST%20framework_files/default.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('form').ajaxForm();
+        });
+      </script>
+    
+
+  
+  
+
+</body></html>

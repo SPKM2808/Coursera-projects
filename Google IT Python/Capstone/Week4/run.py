@@ -9,7 +9,7 @@ for i in os.listdir('./supplier-data/descriptions/'):
 	buff['name']=lines[0].strip()
 	buff['weight']=lines[1].strip()
 	buff['description']=lines[2].strip()
-        buff["image_name"]=i.replace('txt','jpeg')
+    buff["image_name"]=i.replace('txt','jpeg')
 	data1.append(buff)
 	f.close()
 	#print(data1)

@@ -2,6 +2,7 @@
 import psutil
 import emails
 import socket
+import os
 
 def hostname_resolves(hostname):
     try:
@@ -16,7 +17,7 @@ receiver = "{}@example.com".format(os.environ.get('USER'))
 body = "Please check your system and resolve the issue as soon as possible."
 
 
-if psutil.cpu_percent>80 :
+if psutil.cpu_percent()>80 :
     subject = "Error - CPU usage is over 80%"
     message = emails.generate(sender, receiver, subject, body)
     emails.send(message)

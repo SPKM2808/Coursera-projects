@@ -1,0 +1,16 @@
+Return-Path: <automation@example.com>
+X-Original-To: student-00-ffbfb69e9a08@example.com
+Delivered-To: student-00-ffbfb69e9a08@example.com
+Received: from linux-instance.c.qwiklabs-gcp-00-829747e40efc.internal (localhost [IPv6:::1])
+	by linux-instance.c.qwiklabs-gcp-00-829747e40efc.internal (Postfix) with ESMTP id 56A37601FF
+	for <student-00-ffbfb69e9a08@example.com>; Wed, 17 Jun 2020 09:40:43 +0000 (UTC)
+From: automation@example.com
+To: student-00-ffbfb69e9a08@example.com
+Subject: Error - localhost cannot be resolved to 127.0.0.1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+Message-Id: <20200617094043.56A37601FF@linux-instance.c.qwiklabs-gcp-00-829747e40efc.internal>
+Date: Wed, 17 Jun 2020 09:40:43 +0000 (UTC)
+
+Please check your system and resolve the issue as soon as possible.
